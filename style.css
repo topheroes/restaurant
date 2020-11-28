@@ -1,9 +1,18 @@
-*{
+*,
+::before,
+::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .container{
     max-width: 1920px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
 }
 .header__top{
     display: flex; 
@@ -13,22 +22,41 @@
     margin-right: 365px;
 }
 .header__logo{
-    margin-top: 60px;
+    
 }
-.header__burger{
+.header__burger,
+.header__burger::before,
+.header__burger::after{
     width: 40px;
-    height: 0px;
-    border: 1px solid #000000;
-    margin-top: 93px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
 }
+.header__burger::before,
+.header__burger::after{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+}
+.header__burger::after{
+    top: -7px;
+}
+
+
 .menu{
-    margin-top: 95px;
+    
 }
 .menu__list{
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style: none;
+}
+.menu__list li a{
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
 }
 .menu__list li{
     font-family: Montserrat;
@@ -64,6 +92,23 @@
     letter-spacing: 0.05em;
     color: #D1A954;
 }
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: calc(580px * 3 + 50px * 3);
+    overflow: hidden;
+    gap: 50px;
+    justify-content: start;
+    height: 650px;
+    padding-left: 30px;
+    transition: all 0.3s;
+}
+.cards__img{
+    position: relative; 
+    transition: all 0.3s;
+}
+
 .header__images{ 
     display: flex;
     flex-direction: row;
@@ -76,30 +121,16 @@
     margin-left: 30px;
 }  */
 
-.header__block__one{
-    width: 580px;
-    height: 166px;
-    background: rgba(209, 169, 84, 0.9);
-    position: absolute;
-    top: 485px;
-    left: -395px;
-}
-.header__block__two{
-    width: 580px;
-    height: 166px;
-    background: rgba(209, 169, 84, 0.9);
-    position: absolute;
-    top: 485px;
-    left: 185px;
-}
+.header__block__one,
+.header__block__two,
 .header__block__three{
     width: 580px;
     height: 166px;
     background: rgba(209, 169, 84, 0.9);
     position: absolute;
-    top: 485px;
-    left: 765px;
+    bottom: 0; 
 }
+
 .header__border{
     width: 550px;
     height: 126px;
@@ -161,11 +192,13 @@
     position: absolute;
     top: -8px;
     left: -12px;
+    cursor: pointer;
 }
 .next-arrow{
     position: absolute;
     top: -8px;
     left: 150px;
+    cursor: pointer;
 }
 .main__black__line{
     position: absolute;
