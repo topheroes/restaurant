@@ -21,9 +21,6 @@ header{
     margin-left: 160px;
     margin-right: 365px;
 }
-.header__logo{
-    
-}
 .header__burger,
 .header__burger::before,
 .header__burger::after{
@@ -42,11 +39,6 @@ header{
 }
 .header__burger::after{
     top: -7px;
-}
-
-
-.menu{
-    
 }
 .menu__list{
     display: flex;
@@ -117,10 +109,6 @@ header{
     margin-left: 395px;
     position: relative;
 }
-/* .header__images img{
-    margin-left: 30px;
-}  */
-
 .header__block__one,
 .header__block__two,
 .header__block__three{
@@ -130,7 +118,6 @@ header{
     position: absolute;
     bottom: 0; 
 }
-
 .header__border{
     width: 550px;
     height: 126px;
@@ -237,7 +224,136 @@ header{
 }
 .restaurant__picture{
     text-align: center;
+    margin-top: 30px;
 }
 .button__play{
-    margin-top: -310px;
+    margin-top: -315px;
 }
+.restaurant__description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1230px;
+    margin-top: 250px;
+}
+.restaurant__logo{
+    margin-left: 300px;
+    margin-top: 70px;
+}
+.restaurant__logo .active{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #616161;
+    margin-top: 30px;
+    margin-left: -85px;
+}
+.restaurant__logo p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #616161;
+    margin-top: 20px;
+    margin-left: -85px;
+}
+.restaurant__area{
+    margin-top: 70px;
+}
+.restaurant__area span,
+.restaurant__interiors span,
+.restaurant__technology span,
+.restaurant__equipment span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 20px;
+}
+.restaurant__area p,
+.restaurant__interiors p,
+.restaurant__technology p,
+.restaurant__equipment p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 135%;
+    color: #616161;
+    margin-top: 20px;
+}
+.block__one{
+    margin-left: 125px;
+    margin-bottom: 90px;
+}
+.block__two{
+    margin-left: 30px;
+    margin-bottom: 90px;
+}
+.block__three{
+    margin-left: 690px;
+    margin-top: -160px;
+    margin-bottom: 90px;
+}
+.block__four{
+    margin-left: 30px;
+    margin-top: -145px;
+    margin-bottom: 90px;
+}
+.restaurant__interiors{
+    margin-top: 80px;   
+}
+.restaurant__technology{
+    margin-top: 20px;
+}
+.gallery__text{
+    margin-left: 476px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.gallery__logo{
+    margin-left: 510px;
+    margin-top: 20px;
+}
+.gallery__logo div{
+    font-family: Montserrat;    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

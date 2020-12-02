@@ -21,3 +21,17 @@ const handleNextClick = (e)=>{
 
 }
 nextArrow.addEventListener('click', handleNextClick)
+
+const handlePrevClick = (e) => {
+    const prev = (current - 1) % (cardList.length / 3);
+
+    cardList.forEach( (e)=>{
+        console.log( `${width * prev}px`);
+        
+        e.style.left =  `${width * prev}px`
+    }   );
+
+    current = prev;
+
+} 
+prevArrow.addEventListener('click', handlePrevClick)
