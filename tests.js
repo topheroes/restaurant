@@ -15,7 +15,7 @@ const { exit } = require('process');
 // }).listen(80);
 
 (async ()=>{
-    const browser = await chromium.launch({headless:false});
+    const browser = await chromium.launch();
 
     const context = await browser.newContext({
         viewport: { width: 3440, height: 1440 }
