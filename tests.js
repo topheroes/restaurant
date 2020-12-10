@@ -24,6 +24,7 @@ require('http').createServer(function (request, response) {
     await page.goto("http://localhost:8080/index.html")
     await page.screenshot({path: `screenshot_3440.png`});
     await browser.close();
+    exit();
     
 })()
 
