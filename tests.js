@@ -12,7 +12,7 @@ require('http').createServer(function (request, response) {
         fileServer.serve(request, response);
         
     }).resume();
-}).listen(80);
+}).listen(8080);
 
 (async ()=>{
     const browser = await chromium.launch();
@@ -21,7 +21,7 @@ require('http').createServer(function (request, response) {
         viewport: { width: 3440, height: 1440 }
     });
     const page = await context.newPage();
-    await page.goto("http://localhost/index.html")
+    await page.goto("http://localhost:8080/index.html")
     await page.screenshot({path: `screenshot_3440.png`});
     await browser.close();
     
