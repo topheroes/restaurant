@@ -21,7 +21,7 @@ require('http').createServer(function (request, response) {
 const goAndDo = async (context, suffix)=>{
     const page = await context.newPage();
     await page.goto("http://localhost:8080/index.html")
-    await page.screenshot({path: `screenshot_${suffix}.png`});
+    await page.screenshot({path: `screenshot_${suffix}.png`, fullPage: true});
 }
 
 (async ()=>{
